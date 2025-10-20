@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cae6dac0cd14e428707587e313006d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 1305394641}
+  triggerObjects: []
   IsLever: 0
 --- !u!23 &28517313
 MeshRenderer:
@@ -1561,6 +1561,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4385536239482756969, guid: c5129e94a5786974786c5d1ec9fc0b07, type: 3}
+      propertyPath: nextLevel
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385536239482756969, guid: c5129e94a5786974786c5d1ec9fc0b07, type: 3}
       propertyPath: currentScene
       value: Level2
       objectReference: {fileID: 0}
@@ -2604,7 +2608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cae6dac0cd14e428707587e313006d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 1305394641}
+  triggerObjects: []
   IsLever: 0
 --- !u!23 &1472352472
 MeshRenderer:
@@ -3323,7 +3327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cae6dac0cd14e428707587e313006d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 1568208407}
+  triggerObjects: []
   IsLever: 0
 --- !u!23 &2043212834
 MeshRenderer:
@@ -3621,7 +3625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cae6dac0cd14e428707587e313006d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 1568208407}
+  triggerObjects: []
   IsLever: 0
 --- !u!23 &2076127960
 MeshRenderer:

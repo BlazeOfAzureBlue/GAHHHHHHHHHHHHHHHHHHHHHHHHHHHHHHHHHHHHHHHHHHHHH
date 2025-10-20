@@ -4765,6 +4765,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4385536239482756969, guid: c5129e94a5786974786c5d1ec9fc0b07, type: 3}
+      propertyPath: nextLevel
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385536239482756969, guid: c5129e94a5786974786c5d1ec9fc0b07, type: 3}
+      propertyPath: currentScene
+      value: Level3
+      objectReference: {fileID: 0}
     - target: {fileID: 4728432758092346033, guid: c5129e94a5786974786c5d1ec9fc0b07, type: 3}
       propertyPath: m_Name
       value: LevelManager

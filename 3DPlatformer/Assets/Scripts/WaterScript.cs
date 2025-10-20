@@ -4,7 +4,7 @@ public class WaterScript : MonoBehaviour
 {
     [SerializeField] private bool AllowRed;
     [SerializeField] private bool AllowBlue;
-    [SerializeField] private LevelManager LevelManager;
+    [SerializeField] private GameObject GameOverScreen;
 
 
 
@@ -15,17 +15,20 @@ public class WaterScript : MonoBehaviour
             if (!AllowBlue && !AllowRed)
             {
                 print("Restarting level..");
-                LevelManager.RestartLevel();
+                Cursor.lockState = CursorLockMode.Confined;
+                GameOverScreen.SetActive(true);
             }
             else if (!AllowRed && collision.transform.CompareTag("Red"))
             {
                 print("Restarting level..");
-                LevelManager.RestartLevel();
+                Cursor.lockState = CursorLockMode.Confined;
+                GameOverScreen.SetActive(true);
             }
             else if (!AllowBlue && collision.transform.CompareTag("Blue"))
             {
                 print("Restarting level..");
-                LevelManager.RestartLevel();
+                Cursor.lockState = CursorLockMode.Confined;
+                GameOverScreen.SetActive(true);
             }
         }
     }

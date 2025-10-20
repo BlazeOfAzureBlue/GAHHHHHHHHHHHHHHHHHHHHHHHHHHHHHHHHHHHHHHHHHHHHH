@@ -5,8 +5,8 @@ using UnityEngine;
 public class CameraLookScript : MonoBehaviour
 {
 
-    private const float YMin = 0f;
-    private const float YMax = 30.0f;
+    private const float YMin = -45.0f;
+    private const float YMax = 5f;
 
     public Transform lookAt;
 
@@ -36,7 +36,7 @@ public class CameraLookScript : MonoBehaviour
 
         Vector3 Direction = new Vector3(0, 0, -distance);
         Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
-        transform.position = lookAt.position + rotation * Direction;
+        transform.position = lookAt.position - rotation * Direction;
 
         transform.LookAt(lookAt.position);
 
