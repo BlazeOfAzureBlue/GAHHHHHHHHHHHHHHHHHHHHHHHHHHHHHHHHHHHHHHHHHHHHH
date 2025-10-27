@@ -1,4 +1,4 @@
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -34,7 +34,6 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        print(character2rb.linearVelocity);
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
         if(Player2)
